@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generate Insights to Solve Supply Chain Issue in FMCG Domain</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Generate Insights to Solve Supply Chain Issue in FMCG Domain</h1>
+						<p>Technologies Used - Power BI (Including DAX queries)</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								
+								<h2>Problem Statement</h2>
+								<p>AtliQ Mart is a growing FMCG manufacturer headquartered in Gujarat, India. It is currently operational in three cities Surat, Ahmedabad and Vadodara. They want to expand to other metros/Tier 1 cities in the next 2 years.</p>
+								<p>AtliQ Mart is currently facing a problem where a few key customers did not extend their annual contracts due to service issues. It is speculated that some of the essential products were either not delivered on time or not delivered in full over a continued period, which could have resulted in bad customer service. Management wants to fix this issue before expanding to other cities and requested their supply chain analytics team to track the ’On time’ and ‘In Full’ delivery service level for all the customers daily basis so that they can respond swiftly to these issues.</p>
+								<p>The Supply Chain team decided to use a standard approach to measure the service level in which they will measure ‘On-time delivery (OT) %’, ‘In-full delivery (IF) %’, and OnTime in full (OTIF) %’ of the customer orders daily basis against the target service level set for each customer.</p>
+							    
+								<h2>Dashboard Images</h2>
+								<div class="container">
+									<div class="image-container">
+										<img id="image1" src="images\resume_1_pic1.png" alt="Image 1" style="display: block;" height="400" width="700">
+										<img id="image2" src="images\resume_1_pic2.png" alt="Image 2" height="400" width="700">
+										<img id="image3" src="images\resume_1_pic3.png" alt="Image 3" height="400" width="700">
+										<img id="image4" src="images\resume_1_pic4.png" alt="Image 3" height="400" width="700">
+										<img id="image5" src="images\resume_1_pic5.png" alt="Image 3" height="400" width="700">
+									</div>
+									<div class="button-container">
+										<button onclick="showPreviousImage()">Previous</button>
+										<button onclick="showNextImage()">Next</button>
+									</div>
+								</div>
+							    
+								<h2>Key Analytics Findings</h2>
+                                <ul>
+									<li>Analyzed customer data, revealing Ahmedabad city as the primary customer base, while identifying critical supply chain performance metrics such as ONTIME%, OTIF%, and IN FULL% using DAX queries.</li>
+									<li>Identified key customers, such as Lotus Mart and Acclaimed Stores, and their order volumes, pinpointing areas for improvement in delivery performance and product quantity fulfillment.</li>
+									<li>Utilized data visualization and analysis to highlight discrepancies in product lines, emphasizing the need to optimize supply chain processes to improve line fill rates and enhance overall efficiency in delivering products like Amul milk, Amul curd, and Amul butter.</li>
+								</ul>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+
+					<section style="text-align: center; margin: 0 auto; padding: 20px;">
+						<h2><a href="https://github.com/Kirti2003github/Resume_pr1/blob/main/resume_pr_1_dashboard.pbix">Github Link To download dashboard</a></h2>
+		
+					</section>
+					  
+					<p class="copyright">&copy; 2024 Kirti Upadhyay. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				// JavaScript for controlling image display
+				let currentImageIndex = 0;
+				const images = document.querySelectorAll('.image-container img');
+		
+				function showImage(index) {
+					images.forEach((img, i) => {
+						img.style.display = (i === index) ? 'block' : 'none';
+					});
+				}
+		
+				function showPreviousImage() {
+					currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : images.length - 1;
+					showImage(currentImageIndex);
+				}
+		
+				function showNextImage() {
+					currentImageIndex = (currentImageIndex < images.length - 1) ? currentImageIndex + 1 : 0;
+					showImage(currentImageIndex);
+				}
+		
+				// Initial display
+				showImage(currentImageIndex);
+			</script>
+
+	</body>
+</html>

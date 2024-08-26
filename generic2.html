@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Analyze Growth and Present Insights to Telangana Government</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Analyze Growth and Present Insights to Telangana Government</h1>
+						<p>Technologies Used - Power BI (Including DAX queries) ||  SQL ||  Python </p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								
+								<h2>Problem Statement</h2>
+								<p>Telangana is one of the fastest-growing states in India and one of the states with an open data policy. (They have published all their data online)</p>
+								<p>Analyse Telangana’s growth among different sectors quantitatively and provide useful Insights to the Telangana government that would help them to make data-informed decisions that would further support the growth of the state.
+								</p>
+								
+								<h2>Dashboard Images</h2>
+								<div class="container">
+									<div class="image-container">
+										<img id="image6" src="images\resume_2_pic1.png" alt="Image 1" style="display: block;" height="400" width="700">
+										<img id="image7" src="images\resume_2_pic2.png" alt="Image 2" height="400" width="700">
+										<img id="image8" src="images\resume_2_pic3.png" alt="Image 3" height="400" width="700">
+										
+									</div>
+									<div class="button-container">
+										<button onclick="showPreviousImage()">Previous</button>
+										<button onclick="showNextImage()">Next</button>
+									</div>
+								</div>
+							    
+								<h2>Key Analytics Findings</h2>
+                                <ul>
+									<li>Analyzed top-performing districts like Medchal-Malkajgiri and economic hotspots such as Hyderabad</li>
+									<li>Identified trends such as rising electric vehicle sales in Khammam, highlighting the need for strategic interventions.</li>
+									<li>Proposed recommendations to promote tourism, enhance education and healthcare, and foster innovation </li>
+								</ul>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+
+					<section style="text-align: center; margin: 0 auto; padding: 20px;">
+						<h2><a href="https://github.com/Kirti2003github/Resume_pr_3/blob/main/resume_pr_3.pbix">Github Link To download dashboard</a></h2>
+		                <h2><a href="https://github.com/Kirti2003github/Resume_pr_3/blob/main/resume_pr__sql.sql">View SQL code</a></h2>
+						<h2><a href="https://github.com/Kirti2003github/Resume_pr_3/blob/main/resume_p3_python.ipynb">View Python code</a></h2>
+						<h2><a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FKirti2003github%2FResume_pr_3%2Fmain%2FTELENGANA%2520GROWTH%2520ANALYSIS.pptx&wdOrigin=BROWSELINK">Presentation Link</a></h2>
+					</section>
+					  
+					<p class="copyright">&copy; 2024 Kirti Upadhyay. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				// JavaScript for controlling image display
+				let currentImageIndex = 0;
+				const images = document.querySelectorAll('.image-container img');
+		
+				function showImage(index) {
+					images.forEach((img, i) => {
+						img.style.display = (i === index) ? 'block' : 'none';
+					});
+				}
+		
+				function showPreviousImage() {
+					currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : images.length - 1;
+					showImage(currentImageIndex);
+				}
+		
+				function showNextImage() {
+					currentImageIndex = (currentImageIndex < images.length - 1) ? currentImageIndex + 1 : 0;
+					showImage(currentImageIndex);
+				}
+		
+				// Initial display
+				showImage(currentImageIndex);
+			</script>
+
+	</body>
+</html>
